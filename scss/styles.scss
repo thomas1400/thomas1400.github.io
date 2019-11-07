@@ -34,7 +34,7 @@
 */
 
 // Define base and accent colors
-$base-color: #3498db;
+$base-color:  #00539B;
 $base-color-hover: darken($base-color, 10%);
 
 // Define background colors
@@ -46,7 +46,7 @@ $border: #dcd9d9;
 
 // Define text colors
 $heading: #374054;
-$text: #74808a;
+$text: darken(#74808a, 5%);
 
 /*
     ---------------------
@@ -378,7 +378,7 @@ footer {
     }
 
     h2 {
-        color: lighten($base-color, 25%);
+        color: lighten($base-color, 50%);
         font-weight: 500;
         font-size: 2.25em;
         margin-bottom: 15px;
@@ -460,6 +460,42 @@ footer {
 }
 
 /*
+    -----------------------------------
+    ----- 5.5 Project Page Styles -----
+    -----------------------------------
+*/
+
+.projectdescription {
+    padding-top: 50;
+    text-align:center;
+}
+
+.projectparagraph {
+    padding: 15px;
+    padding-top: 30px;
+    width: 80vw;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: justify;
+    display:inline-block;
+
+    h2 {
+      color: $heading;
+      display: inline-block;
+    }
+
+    p {
+        color: $text;
+        margin: 0;
+    }
+}
+
+.p5embed {
+  padding: 15px;
+  display:inline-block;
+}
+
+/*
     --------------------------------
     ----- 6. Experience Styles -----
     --------------------------------
@@ -507,11 +543,12 @@ footer {
 
 .vtimeline-content {
     margin-left: 350px;
-    background: #fff;
     border: 1px solid #e6e6e6;
     padding: 15px;
+    padding-top: 0px;
+    padding-bottom: 20px;
     border-radius: 3px;
-    text-align: left;
+    text-align: left
 
     h3 {
         font-size: 1.5em;
@@ -525,7 +562,8 @@ footer {
         font-size: 1.2em;
         font-weight: 300;
         color: #7e8890;
-        margin: 0 0 15px 0;
+        margin: 0 0 10px 0;
+        margin-top:-10px;
     }
 
     p {
@@ -590,6 +628,7 @@ footer {
 .education-block {
     max-width: 700px;
     margin: 0 auto 30px auto;
+    background: $background;
     padding: 15px;
     border: 1px solid $border;
     text-align: left;

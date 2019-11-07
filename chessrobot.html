@@ -16,42 +16,113 @@
 
 <body>
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5 copyright">
-                    <p>
-                        Copyright &copy; 2019 Thomas Owens
-                    </p>
-                </div>
-                <div class="col-sm-2 top">
-                    <span id="to-top">
-                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                    </span>
-                </div>
-                <div class="col-sm-5 social">
-                    <ul>
-                        <li>
-                            <a href="https://github.com/thomas1400" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- End footer -->
+  <div id="mobile-menu-open" class="shadow-large">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+  </div>
+  <!-- End #mobile-menu-toggle -->
+  <header>
+      <div id="mobile-menu-close">
+          <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+      </div>
+      <ul id="menu" class="shadow">
+          <li>
+              <a href="index.html">Home</a>
+          </li>
+          <li>
+              <a href="index.html#projects">Projects</a>
+          </li>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/scripts.min.js"></script>
+      </ul>
+  </header>
+  <!-- End header -->
+
+  <div id="lead">
+      <div id="lead-content">
+          <h1>Chess-Playing Robotic Arm</h1>
+      </div>
+      <!-- End #lead-content -->
+
+      <div id="lead-overlay"></div>
+
+      <div id="lead-down">
+          <span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          </span>
+      </div>
+      <!-- End #lead-down -->
+  </div>
+  <!-- End #lead -->
+
+  <div class="projectdescription">
+
+    <div class="projectparagraph">
+      <p>
+        The goal of this project is to build a robotic arm that can autonomously play chess against a human opponent.
+      </p> <br>
+      <p>
+        I started out by creating a simulation of the robotic arm in JavaScript, using p5.js, to produce a proof of concept of the control software. I created a 3D visualization of the arm and animated it using control algorithms that I researched and designed. The major challenge in this step was solving the problem of Inverse Kinematics (IK). IK is the problem of calculating joint angles for a given position of the arm, and it's harder than you'd think! To solve the 3D case of a 2-link arm, I first used matrix transformations to rotate it around the vertical axis into a reference plane; solved the 2D IK problem in that reference plane; then rotated the solution back into the original plane.
+      </p> <br>
+      <p>
+        After overcoming this challenge, I added code that takes key inputs to move the robot's 'target' and code that checks and cleans that target input. With that, the visualization was complete! You can take a look at it below: use I, J, K, and L to move the arm around in the horizontal directions, and Y and H to move up and down, respectively. W, A, S, and D pivot the camera, and R and F bring it closer or further.
+      </p>
+    </div>
+
+    <div class="p5embed">
+
+      <iframe style="width: 820px; height: 500px; overflow: hidden;"  scrolling="no" frameborder="0" src="https://editor.p5js.org/thomas1400/embed/ZFmtVPF-v"></iframe>
+
+    </div>
+
+    <div class="projectparagraph">
+
+      <p>
+        This is a new line. This is indeed a new line. Please work. I'll be so happy if this works. This is like a freewriting exercise. I just want this to work. It'll make me marginally happier on this depressing day.
+      </p>
+
+    </div>
+
+  </div>
+<!--
+  <div class="p5embed">
+    <iframe style="width: 400px; height: 400px; overflow: hidden;"  scrolling="no" frameborder="0" src="https://editor.p5js.org/thomas1400/embed/bHw3Nd2-t"></iframe>
+  </div> -->
+
+  <footer>
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-5 copyright">
+                  <p>
+                      Copyright &copy; 2019 Thomas Owens
+                  </p>
+              </div>
+              <div class="col-sm-2 top">
+                  <span id="to-top">
+                      <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                  </span>
+              </div>
+              <div class="col-sm-5 social">
+                  <ul>
+                      <li>
+                          <a href="https://github.com/thomas1400" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                      </li>
+                      <li>
+                          <a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                      </li>
+                      <li>
+                          <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                      </li>
+                      <li>
+                          <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </footer>
+  <!-- End footer -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/scripts.min.js"></script>
 </body>
 
 </html>
