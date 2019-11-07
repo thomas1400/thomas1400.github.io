@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="mobile-menu-open" class="shadow-large">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+  </div>
+  <!-- End #mobile-menu-toggle -->
+  <header>
+      <div id="mobile-menu-close">
+          <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+      </div>
+      <ul id="menu" class="shadow">
+          <li>
+            <a href="index.html" class="no-scroll">Home</a>
+          </li>
+          <li>
+            <a href="index.html#projects" class="no-scroll">Projects</a>
+          </li>
+      </ul>
+  </header>
+  <!-- End header -->
+
+  <div id="lead">
+      <div id="lead-content">
+          <h1>Team GECCO</h1>
+      </div>
+      <!-- End #lead-content -->
+
+      <div id="lead-overlay"></div>
+
+      <div id="lead-down">
+          <span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          </span>
+      </div>
+      <!-- End #lead-down -->
+  </div>
+  <!-- End #lead -->
+
+  <div class="projectdescription">
+
+    <div class="projectparagraph">
+      <p>
+        Team GECCO is a team of Duke undergraduate engineers working in collaboration with Duke postdoc researcher Dr. Jenna Mueller to develop a low-cost electromechanical device for the ablation of cervical cancer.
+        <br><br>
+        The project started when Dr. Mueller discovered, in the course of her studies, that a solution of ethanol and ethylcellulose is a very effective ablative agent. Upon injecting it into cancerous regions, it reacts with water in cervical tissue and forms a viscous gel. This unique property allows the solution to maintain its position in the cancerous area while the ethanol in the solution kills the surrounding cells. However, using this solution as an effective treatment requires two things: an accurate needle insertion method and a very, very slow injection flow rate.
+        <br><br>
+        Our team's goal is to design and build a self-contained, portable device that can be used in a clinical study to evaluate the efficacy of the treatment.
+        <br><br>
+        We began research and development at the beginning of the semester, starting with an exhaustive dive into the background of the problem, including basic domain knowledge, standards and regulations, and existing analogous solutions. We met with an OB-GYN and a professional R&D engineer for guidance during this process.
+        <br><br>
+        After conducting research, we established design criteria and brainstormed solution ideas, then used numerical evaluation techniques to decide between design options. The design we decided on uses a micro linear actuator to insert an array of four small needles in a circle around the os (the cervical opening) and a mini stepper motor with a custom lead screw to very slowly push a syringe containing the gel ethanol. The entire assembly is contained in a biocompatible plastic shell with an internal power supply.
+        <br><br>
+        At this point in the process, our team has sourced materials and built low-fidelity prototypes of both the insertion and injection mechanisms. We have achieved the necessary rates for each operation, proving our concept and paving the way for future advances. See some pictures of the low-fidelity models below!
+      </p>
+
+      <div class="imagecontainer">
+        <img src="images/syringepusher.jpg">
+        <p>
+          A first prototype of the syringe pushing mechanism, with a large stepper motor, to be downsized in future prototypes.
+        </p>
+        <img src="images/syringepushing.gif">
+        <p>
+          The syringe pushing mechanism in action, sped up to about 70x working speed.
+        </p>
+        <img src="images/needlearray.jpg">
+        <p>
+          A first prototype of the needle array and insertion mechanism, with linear actuator attached.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-5 copyright">
+                  <p>
+                      Copyright &copy; 2019 Thomas Owens
+                  </p>
+              </div>
+              <div class="col-sm-2 top">
+                  <span id="to-top">
+                      <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                  </span>
+              </div>
+              <div class="col-sm-5 social">
+                  <ul>
+                      <li>
+                          <a href="https://github.com/thomas1400" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                      </li>
+                      <li>
+                          <a href="https://www.linkedin.com/in/thomas-owens-5aa137181/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </footer>
+  <!-- End footer -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/scripts.min.js"></script>
+</body>
+
+</html>

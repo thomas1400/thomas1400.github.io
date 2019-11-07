@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="mobile-menu-open" class="shadow-large">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+  </div>
+  <!-- End #mobile-menu-toggle -->
+  <header>
+      <div id="mobile-menu-close">
+          <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+      </div>
+      <ul id="menu" class="shadow">
+          <li>
+            <a href="index.html" class="no-scroll">Home</a>
+          </li>
+          <li>
+            <a href="index.html#projects" class="no-scroll">Projects</a>
+          </li>
+      </ul>
+  </header>
+  <!-- End header -->
+
+  <div id="lead">
+      <div id="lead-content">
+          <h1>Ultimate</h1>
+          <h1>Tic-Tac-Toe</h1>
+      </div>
+      <!-- End #lead-content -->
+
+      <div id="lead-overlay"></div>
+
+      <div id="lead-down">
+          <span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          </span>
+      </div>
+      <!-- End #lead-down -->
+  </div>
+  <!-- End #lead -->
+
+  <div class="projectdescription">
+
+    <div class="projectparagraph">
+      <p>
+        This Java-driven Ultimate Tic-Tac-Toe game was a fun exercise in 2D graphics, object-oriented game design, and AI implementation. The motivation for this project came from a fun class I took in Spring 2019, Comp Sci 270: Intro to Artificial Intelligence. One unit of that class was focused on AI for two-player, zero-sum games, like checkers, chess, or Go. I'd always loved the game of Ultimate Tic-Tac-Toe (it's like tic-tac-toe, but recursive: every board contains a second, smaller board. The object of the game is to win three small boards in a row; it makes for a much more interesting and strategic game!), so I thought I'd apply what I'd learned in that class to it!
+        <br> <br>
+        I started by designing the game itself. My object-oriented implementation involves a series of 'nested' classes: for example, the large, main board (the MainBoard class) contains an array of nine smaller, sub-boards (the CellBoard class). The sub-boards, in turn, contain an array of nine cells (the Cell class). Managing these classes and their complex interactions taught me a lot about variable scope and management, and improved my understanding of object-oriented design. You can see the result of this work below: I successfully constructed a working, two-player game!
+      </p>
+      <div class="imagecontainer">
+        <img src="images/UTTT.jpg">
+      </div>
+      <p>
+        My next goal was to add the one-player option: playing against an AI. After reading several research papers on the performance of various AI algorithms on this game, I decided that minimax search with alpha-beta pruning was the way to go. Minimax is an algorithm for two-player, zero-sum games that recursively searches through all possible game states, up to a limited depth, to find the optimal move for a player to make. Alpha-beta pruning is an optimization on this algorithm that limits the search space by ruling out, or 'pruning', moves that are absolutely worse or will never be made.
+        <br><br>
+        Implementing this algorithm was a challenge, but a fun one! It took many hours of troubleshooting to work out all of the bugs, but it was well worth it for the satisfying conclusion. Now, I can practice my Ultimate Tic-Tac-Toe skills against a very impressive AI opponent.
+      </p>
+      <div class="imagecontainer">
+        <img src="images/utttgameplay.gif">
+      </div>
+      <p>
+        You can try it out too! Take a look at the rules <a href="https://mathwithbaddrawings.com/2013/06/16/ultimate-tic-tac-toe/" target="_blank">here</a> and download the standalone .jar executable below! Note that it requires JDK 7+ to run, but has no other dependencies. Have fun!
+      </p>
+
+      <div class="btn-container">
+        <a href="docs/ultimate-TTT.jar" download="UltimateTTT.jar" class="btn-rounded-dark">Download Game</a>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-5 copyright">
+                  <p>
+                      Copyright &copy; 2019 Thomas Owens
+                  </p>
+              </div>
+              <div class="col-sm-2 top">
+                  <span id="to-top">
+                      <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                  </span>
+              </div>
+              <div class="col-sm-5 social">
+                  <ul>
+                      <li>
+                          <a href="https://github.com/thomas1400" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                      </li>
+                      <li>
+                          <a href="https://www.linkedin.com/in/thomas-owens-5aa137181/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </footer>
+  <!-- End footer -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/scripts.min.js"></script>
+</body>
+
+</html>
