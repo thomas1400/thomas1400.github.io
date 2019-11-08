@@ -90,6 +90,10 @@
         <img src="../images/dithereg2.JPG">
       </div>
 
+      <p>
+        Algorithmically, the most interesting part of this process is determining the optimal limited color palette for a given image. There are many complex ways to go about it; I chose to implement one of the most common algorithms, called median cut. Generally, median cut is used to split a set of data of any number of dimensions into a series of smaller sets by repeatedly splitting the set at its median along the longest dimension. In the case of color quantization, this means splitting the set of all of the pixels in the image at the median with respect to the color 'dimension' with the largest range. Repeating this process N times produces 2^N subsets of pixels. Taking the average of each of these subsets gives 2^N colors that generally represent the original color space of the image.
+        <br><br>
+        In practice, I noticed that median cut tends to overrepresent the colors with the highest volume in the image and ignore colors that only appear in small amounts. To solve this issue, I made a modification to the algorithm, based on some quick research. I modified the cut point to be further towards the side with the larger difference between its average color and the median color. I found that cutting at the median of the less represented side, instead of at the median of the entire set, ensured that the resulting color palette included more of the 'smaller' colors in the image. With that, my optimized median cut was complete!
     </div>
 
   </div>

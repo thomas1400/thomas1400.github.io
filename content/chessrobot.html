@@ -61,7 +61,7 @@
       <br> <br>
         I started out by creating a simulation of the robotic arm in JavaScript, using p5.js, to produce a proof of concept of the control software. I created a 3D visualization of the arm and animated it using control algorithms that I researched and designed. The major challenge in this step was solving the problem of Inverse Kinematics (IK). IK is the problem of calculating joint angles for a given position of the arm, and it's harder than you'd think! To solve the 3D case of a 2-link arm, I first used matrix transformations to rotate it around the vertical axis into a reference plane; solved the 2D IK problem in that reference plane; then rotated the solution back into the original plane.
       <br> <br>
-        After overcoming this challenge, I added code that takes key inputs to move the robot's 'target' and code that checks and cleans that target input. With that, the visualization was complete! You can take a look at it below: use I, J, K, and L to move the arm around in the horizontal directions, and Y and H to move up and down, respectively. W, A, S, and D pivot the camera, and R and F bring it closer or further.
+        After overcoming this challenge, I added code that takes key inputs to move the robot's 'target' and code that checks and cleans that target input. With that, the visualization was complete! You can try it out below: click inside the black rectangle (to begin capturing keypresses), then use I, J, K, and L to move the arm around in the horizontal directions. Y and H move the arm up and down, respectively. W, A, S, and D pivot the camera, and R and F bring it closer or further.
       </p>
     </div>
 
